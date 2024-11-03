@@ -27,39 +27,14 @@
         android:layout_marginTop="16dp" />
 
     <Button
-        android:id="@+id/btn1"
+        android:id="@+id/btnNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Scene 1"
+        android:layout_marginTop="16dp"
+        android:text="Next"
+        android:visibility="gone"
         app:layout_constraintTop_toBottomOf="@id/intro"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="16dp" />
-
-    <Button
-        android:id="@+id/btn2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Scene 2"
-        app:layout_constraintTop_toBottomOf="@id/intro"
-        app:layout_constraintStart_toEndOf="@id/btn1"
-        app:layout_constraintEnd_toStartOf="@id/btn3"
-        android:layout_marginTop="16dp" />
-
-    <Button
-        android:id="@+id/btn3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Scene 3"
-        app:layout_constraintTop_toBottomOf="@id/intro"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
-    <Button
-        android:id="@+id/btn4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Scene 3"
-        app:layout_constraintTop_toBottomOf="@id/intro"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

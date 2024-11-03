@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.madsmartcity.Scene1"
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:id="@+id/btnScene1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scene 1" />
+
+        <Button
+            android:id="@+id/btnScene2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scene 2" />
+
+        <Button
+            android:id="@+id/btnScene3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scene 3" />
+    </LinearLayout>
+</LinearLayout>
