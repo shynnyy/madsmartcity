@@ -1,9 +1,11 @@
 package com.example.madsmartcity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
@@ -57,6 +59,22 @@ public class Scene1 extends Fragment {
         MediaController mediaController = new MediaController(requireContext());
         s1.setMediaController(mediaController);
         mediaController.setAnchorView(s1);
+        Button endBtn = view.findViewById(R.id.EndButton);
+        endBtn.setVisibility(View.GONE);
+
+        endBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), MainActivity3.class);
+                startActivity(intent);
+            }
+        });
+
+        // Show End button when the video completes
+        s1.setOnCompletionListener(mediaPlayer -> endBtn.setVisibility(View.VISIBLE));
+
+        // Start the video
+        s1.start();
 
         return view;
     }
