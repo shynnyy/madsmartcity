@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/tws"
+    android:background="@drawable/tws_3"
     tools:context=".MainActivity">
 
     <VideoView

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/scene2__2_"
+    android:background="@drawable/scene1_15"
     tools:context=".Scene3">
 
     <VideoView
