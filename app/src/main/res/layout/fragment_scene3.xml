@@ -4,28 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/scene2__2_"
     tools:context=".Scene3">
 
-    <!-- TextView for the scene title -->
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="30dp"
-        android:text="This is Scene 3"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-
-    <!-- VideoView to play the video -->
     <VideoView
         android:id="@+id/Scene3"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="16dp"
-        android:layout_gravity="center" />
+        android:layout_width="401dp"
+        android:layout_height="189dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
 
-    <!-- Horizontal LinearLayout for buttons -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,7 +28,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="End"
-            android:visibility="gone"/>
+            android:visibility="gone"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"/>
 
     </LinearLayout>
 
